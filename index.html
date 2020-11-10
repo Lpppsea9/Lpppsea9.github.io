@@ -83,20 +83,33 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2020/11/09/11-9-test/" title="11/9-test" itemprop="url">11/9-test</a>
+      <a href="/2020/11/10/css伪类元素/" title="css伪类元素" itemprop="url">css伪类元素</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="海久" target="_blank" itemprop="author">海久</a>
 		
   <p class="article-time">
-    <time datetime="2020-11-09T12:43:20.000Z" itemprop="datePublished"> Published 2020-11-09</time>
+    <time datetime="2020-11-10T13:56:02.000Z" itemprop="datePublished"> Published 2020-11-10</time>
     
   </p>
 </header>
     <div class="article-content">
         
-        
+        <h1 id="css伪元素"><a href="#css伪元素" class="headerlink" title="css伪元素"></a>css伪元素</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;aside&gt;</span><br><span class="line">  &lt;h1&gt;&lt;&#x2F;h1&gt;</span><br><span class="line">  &lt;ar&gt;</span><br><span class="line">    &lt;h1&gt;</span><br><span class="line">  &lt;ar&gt;</span><br><span class="line">  &lt;h2&gt;</span><br><span class="line">&lt;&#x2F;aside&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="1-注意选择器的区别"><a href="#1-注意选择器的区别" class="headerlink" title="1.注意选择器的区别"></a>1.注意选择器的区别</h4><p><code>aside h1</code>指的是aside里所有的h1元素</p>
+<p><code>aside &gt; h1</code> 指的是父元素为aside的所有h1元素</p>
+<h4 id="2-注意元素编号灵活选择"><a href="#2-注意元素编号灵活选择" class="headerlink" title="2.注意元素编号灵活选择"></a>2.注意元素编号灵活选择</h4><p><code>first-child</code>: </p>
+<p>如 div &gt; h1 指的是div中后代为h1的的元素，注意和div h1的不同</p>
+<p>first-child 匹配只能h1在一个的是时候，如果h1不在第一个，则匹配无效。</p>
+<p><code>first-of-type</code></p>
+<p><code>last-child</code></p>
+<p><code>last-of-type</code></p>
+<p><code>only-child</code></p>
+<p><code>only-of-type</code></p>
+<p><code>h1:nth-child(1)</code><br><code>nth-child(n)</code><br><code>nth-child(2n+!)</code><br><code>nth-child(2n-1)</code></p>
+<p><code>h1:nth-of-type</code></p>
+
         
         
         <p class="article-more-link">
@@ -107,67 +120,10 @@
 <div class="article-catetags">
 
 
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2020/11/09/hello-world/" title="Hello World" itemprop="url">Hello World</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="海久" target="_blank" itemprop="author">海久</a>
-		
-  <p class="article-time">
-    <time datetime="2020-11-09T12:26:07.346Z" itemprop="datePublished"> Published 2020-11-09</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/css/">css</a>
+  </div>
 
 </div>
 
@@ -202,6 +158,17 @@
   
 
   
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
 
   <div class="linkslist">
   <p class="asidetitle">Links</p>
