@@ -83,6 +83,68 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2020/11/23/js原型/" title="js原型" itemprop="url">js原型</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="海久" target="_blank" itemprop="author">海久</a>
+		
+  <p class="article-time">
+    <time datetime="2020-11-23T14:18:18.000Z" itemprop="datePublished"> Published 2020-11-23</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h4 id="js原型"><a href="#js原型" class="headerlink" title="js原型"></a>js原型</h4><ol>
+<li>理解js原型链顶端的构造器，如Function、Function、Array、Boolean、Symbol、Object、<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> <span class="built_in">Array</span>    <span class="comment">//以下皆为 function</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">String</span> </span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">Function</span> </span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">Boolean</span> </span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">Symbol</span> </span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">Object</span> </span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>深刻理解为什么 ?<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Function</span>.prototype = <span class="built_in">Function</span>.__proto__</span><br></pre></td></tr></table></figure>
+在研究js原型链的时候发现上面这个等式，可以理解成Function就是由自己实例化构造而成的，所以它的__proto__指向它本身的prototype(原型对象)。</li>
+</ol>
+<ol start="3">
+<li>结合以下的原型链的图示来理解<br><img src="https://i.loli.net/2020/11/23/FLKovqGI1swX4Jc.jpg" alt="原型链.jpg"></li>
+</ol>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/js/">js</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2020/11/10/Promise复习/" title="Promise复习" itemprop="url">Promise复习</a>
   </h1>
   <p class="article-author">By
@@ -110,7 +172,7 @@
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/JS/">JS</a>
+  <span></span> <a href="/tags/js/">js</a>
   </div>
 
 </div>
@@ -151,7 +213,7 @@
 </header>
     <div class="article-content">
         
-        <h1 id="css伪元素"><a href="#css伪元素" class="headerlink" title="css伪元素"></a>css伪元素</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;aside&gt;</span><br><span class="line">  &lt;h1&gt;&lt;&#x2F;h1&gt;</span><br><span class="line">  &lt;ar&gt;</span><br><span class="line">    &lt;h1&gt;</span><br><span class="line">  &lt;ar&gt;</span><br><span class="line">  &lt;h2&gt;</span><br><span class="line">&lt;&#x2F;aside&gt;</span><br></pre></td></tr></table></figure>
+        <h3 id="css伪元素"><a href="#css伪元素" class="headerlink" title="css伪元素"></a>css伪元素</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;aside&gt;</span><br><span class="line">  &lt;h1&gt;&lt;&#x2F;h1&gt;</span><br><span class="line">  &lt;ar&gt;</span><br><span class="line">    &lt;h1&gt;</span><br><span class="line">  &lt;ar&gt;</span><br><span class="line">  &lt;h2&gt;</span><br><span class="line">&lt;&#x2F;aside&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="1-注意选择器的区别"><a href="#1-注意选择器的区别" class="headerlink" title="1.注意选择器的区别"></a>1.注意选择器的区别</h4><p><code>aside h1</code>指的是aside里所有的h1元素</p>
 <p><code>aside &gt; h1</code> 指的是父元素为aside的所有h1元素</p>
 <h4 id="2-注意元素编号灵活选择"><a href="#2-注意元素编号灵活选择" class="headerlink" title="2.注意元素编号灵活选择"></a>2.注意元素编号灵活选择</h4><p><code>first-child</code>: </p>
@@ -218,11 +280,11 @@
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
+				<li><a href="/tags/js/" title="js">js<sup>2</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/JS/" title="JS">JS<sup>1</sup></a></li>
+				<li><a href="/tags/css/" title="css">css<sup>1</sup></a></li>
 			
 		
 		</ul>
