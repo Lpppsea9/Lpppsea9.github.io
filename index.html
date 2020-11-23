@@ -23,7 +23,7 @@
     <link rel="alternative" href="/atom.xml" title="Sea9" type="application/atom+xml">
     
     
-    <link rel="icon" href="/img/favicon2.svg">
+    <link rel="icon" href="/img/favicon1.svg">
     
     
     <link rel="apple-touch-icon" href="/img/jacman.jpg">
@@ -77,184 +77,63 @@
     <div id="container">
       <div id="main">
 
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2020/11/23/js原型/" title="js原型" itemprop="url">js原型</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="海久" target="_blank" itemprop="author">海久</a>
-		
-  <p class="article-time">
-    <time datetime="2020-11-23T14:18:18.000Z" itemprop="datePublished"> Published 2020-11-23</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h4 id="js原型"><a href="#js原型" class="headerlink" title="js原型"></a>js原型</h4><ol>
-<li>理解js原型链顶端的构造器，如Function、Function、Array、Boolean、Symbol、Object、<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> <span class="built_in">Array</span>    <span class="comment">//以下皆为 function</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">String</span> </span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">Function</span> </span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">Boolean</span> </span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">Symbol</span> </span><br><span class="line"><span class="keyword">typeof</span> <span class="built_in">Object</span> </span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li>深刻理解为什么 ?<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Function</span>.prototype = <span class="built_in">Function</span>.__proto__</span><br></pre></td></tr></table></figure>
-在研究js原型链的时候发现上面这个等式，可以理解成Function就是由自己实例化构造而成的，所以它的__proto__指向它本身的prototype(原型对象)。</li>
-</ol>
-<ol start="3">
-<li>结合以下的原型链的图示来理解<br><img src="https://i.loli.net/2020/11/23/FLKovqGI1swX4Jc.jpg" alt="原型链.jpg"></li>
-</ol>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
   
-  <span></span> <a href="/tags/js/">js</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2020/11/10/Promise复习/" title="Promise复习" itemprop="url">Promise复习</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="海久" target="_blank" itemprop="author">海久</a>
-		
-  <p class="article-time">
-    <time datetime="2020-11-10T14:34:20.000Z" itemprop="datePublished"> Published 2020-11-10</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h3 id="Promise-复习"><a href="#Promise-复习" class="headerlink" title="Promise 复习"></a>Promise 复习</h3><p>1.手写Promise</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">promise</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
+<section class="post" itemscope itemprop="blogitem">
   
-  <span></span> <a href="/tags/js/">js</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2020/11/10/css伪类元素/" title="css伪类元素" itemprop="url">css伪类元素</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="海久" target="_blank" itemprop="author">海久</a>
-		
-  <p class="article-time">
-    <time datetime="2020-11-10T13:56:02.000Z" itemprop="datePublished"> Published 2020-11-10</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <h3 id="css伪元素"><a href="#css伪元素" class="headerlink" title="css伪元素"></a>css伪元素</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;aside&gt;</span><br><span class="line">  &lt;h1&gt;&lt;&#x2F;h1&gt;</span><br><span class="line">  &lt;ar&gt;</span><br><span class="line">    &lt;h1&gt;</span><br><span class="line">  &lt;ar&gt;</span><br><span class="line">  &lt;h2&gt;</span><br><span class="line">&lt;&#x2F;aside&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="1-注意选择器的区别"><a href="#1-注意选择器的区别" class="headerlink" title="1.注意选择器的区别"></a>1.注意选择器的区别</h4><p><code>aside h1</code>指的是aside里所有的h1元素</p>
-<p><code>aside &gt; h1</code> 指的是父元素为aside的所有h1元素</p>
-<h4 id="2-注意元素编号灵活选择"><a href="#2-注意元素编号灵活选择" class="headerlink" title="2.注意元素编号灵活选择"></a>2.注意元素编号灵活选择</h4><p><code>first-child</code>: </p>
-<p>如 div &gt; h1 指的是div中后代为h1的的元素，注意和div h1的不同</p>
-<p>first-child 匹配只能h1在一个的是时候，如果h1不在第一个，则匹配无效。</p>
-<p><code>first-of-type</code></p>
-<p><code>last-child</code></p>
-<p><code>last-of-type</code></p>
-<p><code>only-child</code></p>
-<p><code>only-of-type</code></p>
-<p><code>h1:nth-child(1)</code><br><code>nth-child(n)</code><br><code>nth-child(2n+!)</code><br><code>nth-child(2n-1)</code></p>
-<p><code>h1:nth-of-type</code></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-  <div class="article-tags">
+    <a href="/2020/11/23/js原型/" title="js原型" itemprop="url">
   
-  <span></span> <a href="/tags/css/">css</a>
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-</div>
-
-</footer>
+    <h1 itemprop="name">js原型</h1>
+    
+     
+           <p itemprop="description" >js原型
+理解js原型链顶端的构造器，如Function、Function、Array、Boolean、Symbol、Object、1234567typeof Array    //以下皆为 functiontypeof String typeof Function typeof</p>
+        
+    
+    <time datetime="2020-11-23T14:18:18.000Z" itemprop="datePublished">2020-11-23</time>
+  </a>
+</section>
 
 
-    </article>
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2020/11/10/Promise复习/" title="Promise复习" itemprop="url">
+  
+    <h1 itemprop="name">Promise复习</h1>
+    
+     
+           <p itemprop="description" >Promise 复习1.手写Promise
+12promise</p>
+        
+    
+    <time datetime="2020-11-10T14:34:20.000Z" itemprop="datePublished">2020-11-10</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2020/11/10/css伪类元素/" title="css伪类元素" itemprop="url">
+  
+    <h1 itemprop="name">css伪类元素</h1>
+    
+     
+           <p itemprop="description" >css伪元素1234567&amp;lt;aside&amp;gt;  &amp;lt;h1&amp;gt;&amp;lt;&amp;#x2F;h1&amp;gt;  &amp;lt;ar&amp;gt;    &amp;lt;h1&amp;gt;  &amp;lt;ar&amp;gt;  &amp;lt;h2&amp;gt;&amp;lt;&amp;#x2F;aside&amp;gt;
+1.注意选择器的区别aside </p>
+        
+    
+    <time datetime="2020-11-10T13:56:02.000Z" itemprop="datePublished">2020-11-10</time>
+  </a>
+</section>
 
 
 
